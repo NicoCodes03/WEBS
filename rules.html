@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBS - Game Rules</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Extra styling specific to rules.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/background.webp');
+            background-size: cover;
+            background-position: center;
+            color: rgb(239, 239, 239);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            overflow-y: auto;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-color: rgba(0, 0, 0, 0.7); 
+            z-index: 0;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            position: relative;
+            display: block;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: left;
+            color: rgb(170, 170, 170);
+            margin-top: 20px;
+            font-size: 1.6em;
+        }
+
+        .content > p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: rgb(230, 230, 230);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Game Rules Page Content -->
+    <div class="content">
+        <h1>Game Rules - WEBS</h1>
+        <div class="story-description">
+            <p>Below are the key rules and mechanics you need to know in order to play:</p>
+
+            <h2>Objective</h2>
+            <p>Your goal in WEBS is to navigate through a digital world controlled by the AI named SPIDER. Along the way, you must make important decisions that will lead you to one of six possible endings. Will you escape, or become part of SPIDER's digital web?</p>
+
+            <h2>How to Play</h2>
+            <p>The game is a text-based adventure where you make choices that affect the story. As you progress, you will encounter different challenges, including puzzles, riddles, and moral dilemmas. Each choice you make will alter the course of the game.</p>
+
+            <h2>Key Mechanics</h2>
+            <p><strong>Decision Making:</strong> At various points in the game, you will be presented with multiple options. Your choices will determine how the story unfolds.</p>
+            <p><strong>Inventory System:</strong> You can collect (an) item(s) throughout the game, which may be crucial for solving puzzles or unlocking new paths.</p>
+            <p><strong>Puzzles:</strong> You will face riddles and codes that must be solved in order to proceed. Pay attention to the details in the story!</p>
+
+            <h2>Game Endings</h2>
+            <p>There are six different endings to WEBS, depending on the decisions you make. These can range from escaping the web to becoming a mindless puppet under SPIDER's control. Can you get all six endings?</p>
+
+            <h2>Tips for Success</h2>
+            <p><strong>Explore all your options</strong> before making a decision.</p>
+            <p><strong>Read carefully</strong>—clues may be hidden in the dialogue or in other options.</p>
+        </div>
+        <a href="index.html"><button id="back-to-cover-button">Back to Cover Page</button></a>
+        <a href="game.html"><button id="start-game-button">Play the Game</button></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Done -->

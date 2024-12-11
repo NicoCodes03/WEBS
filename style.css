@@ -1,0 +1,144 @@
+/* Style sheet for all files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(239, 239, 239);
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+/* Content section */
+.content {
+    text-align: center;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+/* Game content section */
+#game-content {
+    display: none; 
+    text-align: left;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    color: rgb(179, 179, 179);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: rgb(170, 170, 170);
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+/* General paragraph styling for content */
+.content > p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: rgb(230, 230, 230);
+}
+
+/* Story label and description */
+.story-label {
+    font-size: 1.1em;
+    color: rgb(170, 170, 170);
+    margin-top: 10px;
+}
+
+.story-description p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: rgb(170, 170, 170);
+    text-align: left;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Game text styling */
+#game-text {
+    font-size: 1.05em;
+    margin-bottom: 20px;
+    color: rgb(230, 230, 230);
+}
+
+/* Styling for the choices */
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#choices button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px 0;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#choices button:hover {
+    background-color: #666;
+}
+
+#game-text {
+    color: rgb(190, 190, 190);
+    font-size: 1.0em;
+}
+/* Done */

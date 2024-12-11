@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBS - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to WEBS</h1>
+        <p>Navigate through the digital web to escape or become a mindless puppet of SPIDER.</p>
+
+        <!-- Story Description -->
+        <div class="story-description">
+            <p>Welcome to WEBS, a dystopian world where an AI entity called SPIDER controls a vast network known as The Web. SPIDER weaves its webs to trap human minds, turning those it captures into mindless puppets—its FLIES.</p>
+            <p>You are a hacker who stumbles upon a hidden anomaly in the Web, discovering that SPIDER is not just manipulating data, but integrating people’s consciousness into its network. Your friend Mia, who has been investigating SPIDER, has gone missing, leaving behind a cryptic message: "The Web is not what it seems."</p>
+            <p>Now, you must navigate SPIDER’s corrupted domain to save your friend and uncover the truth. Every decision you make will determine the fate of those around you—and whether you remain free or become just another FLY in its web.</p>
+        </div>
+
+        <!-- Start Game Button -->
+        <button id="start-game-button">Start Game</button>
+    </div>
+
+    <!-- Game Content Section (Hidden Initially) -->
+    <div id="game-content" style="display: none;">
+        <!-- Game Text -->
+        <div id="game-text"></div>
+        <!-- Game Choices -->
+        <div id="choices"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyCOzxPcA66AhDkLHI_TkHgNX0BPiXLGcxE",
+        authDomain: "webs-game-33123.firebaseapp.com",
+        projectId: "webs-game-33123",
+        storageBucket: "webs-game-33123.firebasestorage.app",
+        messagingSenderId: "751719665693",
+        appId: "1:751719665693:web:9a00e74155c25bc2e136f4"
+      };
+        // Initialize Firebase
+            const app = firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            const auth = firebase.auth();
+      </script>
+</body>
+</html>
+<!-- Done -->
